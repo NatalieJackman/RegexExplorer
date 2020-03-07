@@ -21,13 +21,46 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkC-0g-8o4">
+                                <rect key="frame" x="20" y="20" width="410" height="236"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="c9i-bt-V3M">
+                                    <rect key="frame" x="0.0" y="0.0" width="410" height="236"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="ii1-WD-6jP">
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="236"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="410" height="236"/>
+                                            <size key="maxSize" width="410" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="mgr-tQ-pfb">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="VyP-7j-ton">
+                                    <rect key="frame" x="394" y="0.0" width="16" height="236"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="TkC-0g-8o4" firstAttribute="leading" secondItem="ZXb-S6-DH8" secondAttribute="leading" constant="20" id="40W-7e-htx"/>
                             <constraint firstItem="O3g-UP-diV" firstAttribute="leading" secondItem="ZXb-S6-DH8" secondAttribute="leading" constant="20" id="hfg-2c-1Ni"/>
+                            <constraint firstItem="TkC-0g-8o4" firstAttribute="top" secondItem="O3g-UP-diV" secondAttribute="bottom" constant="8" id="kw8-Sr-hiO"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="O3g-UP-diV" secondAttribute="trailing" constant="385" id="pS4-68-epP"/>
+                            <constraint firstAttribute="trailing" secondItem="TkC-0g-8o4" secondAttribute="trailing" constant="20" id="s5l-ts-dhK"/>
                             <constraint firstItem="O3g-UP-diV" firstAttribute="top" secondItem="ZXb-S6-DH8" secondAttribute="top" constant="20" id="udW-Su-k6B"/>
+                            <constraint firstAttribute="bottom" secondItem="TkC-0g-8o4" secondAttribute="bottom" constant="20" id="zFs-Am-d87"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sampleScrollView" destination="TkC-0g-8o4" id="167-YS-Du1"/>
+                    </connections>
                 </viewController>
                 <customObject id="ay4-ph-YLr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

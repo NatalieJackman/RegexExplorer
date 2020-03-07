@@ -683,23 +683,43 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Regex Explorer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                <windowController id="B8D-0N-5wS" customClass="mainWindowController" customModule="RegexExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Regex Explorer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="mainWindow" customModule="RegexExplorer" customModuleProvider="target">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="276" width="480" height="234"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="B2B2B9DF-1A6A-4854-9BFC-3220819E2580" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="pse-XC-h4d">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="0BCF2F73-9DF4-470A-B6A4-91729019A411" label="Run" paletteLabel="Run" tag="-1" image="NSFollowLinkFreestandingTemplate" id="Gx7-pf-LCc">
+                                    <size key="minSize" width="14" height="14"/>
+                                    <size key="maxSize" width="14" height="14"/>
+                                    <connections>
+                                        <action selector="runToolbar_Action:" target="B8D-0N-5wS" id="e3I-uF-Jds"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="qfO-2y-mkb"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="Jzj-ZQ-xgs"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="BTh-U2-W6g"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="yON-75-Vlq"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="xNN-ld-pGT"/>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="Gx7-pf-LCc"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
+                        <outlet property="runToolbarItem" destination="Gx7-pf-LCc" id="5pC-I7-Tb3"/>
                         <segue destination="eTS-HZ-fb0" kind="relationship" relationship="window.shadowedContentViewController" id="QnL-Rp-81h"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="75" y="268"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="JVK-CS-S6y">
@@ -753,4 +773,7 @@
             <point key="canvasLocation" x="483" y="732"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSFollowLinkFreestandingTemplate" width="14" height="14"/>
+    </resources>
 </document>

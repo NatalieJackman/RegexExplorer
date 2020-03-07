@@ -10,6 +10,8 @@ import Cocoa
 
 class sampleViewController: NSViewController
 {
+    @IBOutlet weak var sampleScrollView: NSScrollView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
