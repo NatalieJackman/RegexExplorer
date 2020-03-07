@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="2Jh-w9-rD0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8OJ-8x-zfJ">
+            <objects>
+                <viewController id="2Jh-w9-rD0" sceneMemberID="viewController">
+                    <view key="view" id="ZXb-S6-DH8">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O3g-UP-diV">
+                                <rect key="frame" x="18" y="264" width="49" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Sample" id="tuV-cx-fbp">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="O3g-UP-diV" firstAttribute="leading" secondItem="ZXb-S6-DH8" secondAttribute="leading" constant="20" id="hfg-2c-1Ni"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="O3g-UP-diV" secondAttribute="trailing" constant="385" id="pS4-68-epP"/>
+                            <constraint firstItem="O3g-UP-diV" firstAttribute="top" secondItem="ZXb-S6-DH8" secondAttribute="top" constant="20" id="udW-Su-k6B"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="ay4-ph-YLr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229" y="-36"/>
+        </scene>
+    </scenes>
+</document>

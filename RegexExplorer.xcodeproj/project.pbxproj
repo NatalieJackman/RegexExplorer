@@ -13,6 +13,9 @@
 		DCEE701A2414091F009EA2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE70182414091F009EA2E3 /* Main.storyboard */; };
 		DCEE702624140920009EA2E3 /* RegexExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE702524140920009EA2E3 /* RegexExplorerTests.swift */; };
 		DCEE703124140920009EA2E3 /* RegexExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE703024140920009EA2E3 /* RegexExplorerUITests.swift */; };
+		DCEE704324141073009EA2E3 /* Pattern.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE704224141073009EA2E3 /* Pattern.storyboard */; };
+		DCEE704524141112009EA2E3 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE704424141112009EA2E3 /* Sample.storyboard */; };
+		DCEE704724141124009EA2E3 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE704624141124009EA2E3 /* Groups.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		DCEE702C24140920009EA2E3 /* RegexExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegexExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEE703024140920009EA2E3 /* RegexExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexExplorerUITests.swift; sourceTree = "<group>"; };
 		DCEE703224140920009EA2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCEE704224141073009EA2E3 /* Pattern.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pattern.storyboard; sourceTree = "<group>"; };
+		DCEE704424141112009EA2E3 /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
+		DCEE704624141124009EA2E3 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,9 @@
 			isa = PBXGroup;
 			children = (
 				DCEE70182414091F009EA2E3 /* Main.storyboard */,
+				DCEE704224141073009EA2E3 /* Pattern.storyboard */,
+				DCEE704424141112009EA2E3 /* Sample.storyboard */,
+				DCEE704624141124009EA2E3 /* Groups.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -244,7 +253,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEE704724141124009EA2E3 /* Groups.storyboard in Resources */,
 				DCEE70172414091F009EA2E3 /* Assets.xcassets in Resources */,
+				DCEE704324141073009EA2E3 /* Pattern.storyboard in Resources */,
+				DCEE704524141112009EA2E3 /* Sample.storyboard in Resources */,
 				DCEE701A2414091F009EA2E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

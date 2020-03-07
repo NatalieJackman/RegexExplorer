@@ -706,8 +706,9 @@
             <objects>
                 <splitViewController id="eTS-HZ-fb0" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem id="wy6-Cm-UD7"/>
-                        <splitViewItem id="9OU-4S-W9r"/>
+                        <splitViewItem id="Jj6-ba-ZGp"/>
+                        <splitViewItem id="51I-zo-GFS"/>
+                        <splitViewItem id="POc-ly-lqb"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" id="cS6-Jd-4UW">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -718,39 +719,38 @@
                     </splitView>
                     <connections>
                         <outlet property="splitView" destination="cS6-Jd-4UW" id="6kE-4I-TA0"/>
-                        <segue destination="ouU-nQ-rCD" kind="relationship" relationship="splitItems" id="4ha-Mb-50f"/>
-                        <segue destination="3Yc-we-CmO" kind="relationship" relationship="splitItems" id="gBl-7q-3JK"/>
+                        <segue destination="X29-hx-X7D" kind="relationship" relationship="splitItems" id="AaA-iT-DrN"/>
+                        <segue destination="CQZ-HZ-WTD" kind="relationship" relationship="splitItems" id="bbQ-kB-T6J"/>
+                        <segue destination="ENa-uu-1Tg" kind="relationship" relationship="splitItems" id="e5e-1b-Ylv"/>
                     </connections>
                 </splitViewController>
                 <customObject id="8Ed-sz-JIW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="669"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Yt0-ng-t7z">
+        <!--Pattern-->
+        <scene sceneID="tIv-Rc-pPb">
             <objects>
-                <viewController id="ouU-nQ-rCD" sceneMemberID="viewController">
-                    <view key="view" id="tHe-8g-ze4">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="avK-UP-AYo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <controllerPlaceholder storyboardName="Pattern" id="X29-hx-X7D" sceneMemberID="viewController"/>
+                <customObject id="DUv-FC-QhG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="723" y="479"/>
+            <point key="canvasLocation" x="484" y="603"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="bfk-UK-Xd9">
+        <!--Sample-->
+        <scene sceneID="vu8-Ye-vNK">
             <objects>
-                <viewController id="3Yc-we-CmO" sceneMemberID="viewController">
-                    <view key="view" id="NN4-ol-ciD">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="234-cy-IyW" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <controllerPlaceholder storyboardName="Sample" id="CQZ-HZ-WTD" sceneMemberID="viewController"/>
+                <customObject id="jQ0-vi-lpy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="723" y="851"/>
+            <point key="canvasLocation" x="484" y="669"/>
+        </scene>
+        <!--Groups-->
+        <scene sceneID="Agf-yq-CGh">
+            <objects>
+                <controllerPlaceholder storyboardName="Groups" id="ENa-uu-1Tg" sceneMemberID="viewController"/>
+                <customObject id="EYQ-84-d1B" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="483" y="732"/>
         </scene>
     </scenes>
 </document>
