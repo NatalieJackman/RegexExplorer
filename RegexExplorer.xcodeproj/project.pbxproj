@@ -96,10 +96,9 @@
 		DCEE70112414091F009EA2E3 /* RegexExplorer */ = {
 			isa = PBXGroup;
 			children = (
-				DCEE70122414091F009EA2E3 /* AppDelegate.swift */,
-				DCEE70142414091F009EA2E3 /* ViewController.swift */,
+				DCEE703F24140957009EA2E3 /* Storyboards */,
+				DCEE703E2414094C009EA2E3 /* Code */,
 				DCEE70162414091F009EA2E3 /* Assets.xcassets */,
-				DCEE70182414091F009EA2E3 /* Main.storyboard */,
 				DCEE701B2414091F009EA2E3 /* Info.plist */,
 				DCEE701C2414091F009EA2E3 /* RegexExplorer.entitlements */,
 			);
@@ -122,6 +121,23 @@
 				DCEE703224140920009EA2E3 /* Info.plist */,
 			);
 			path = RegexExplorerUITests;
+			sourceTree = "<group>";
+		};
+		DCEE703E2414094C009EA2E3 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE70122414091F009EA2E3 /* AppDelegate.swift */,
+				DCEE70142414091F009EA2E3 /* ViewController.swift */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		DCEE703F24140957009EA2E3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE70182414091F009EA2E3 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RegexExplorer/RegexExplorer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DQQ8HGK752;
@@ -440,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RegexExplorer/RegexExplorer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DQQ8HGK752;
