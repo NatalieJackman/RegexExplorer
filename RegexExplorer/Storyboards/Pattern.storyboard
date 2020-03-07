@@ -5,33 +5,66 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pattern View Controller-->
         <scene sceneID="bjQ-2E-grN">
             <objects>
-                <viewController id="FBf-cr-bZ6" sceneMemberID="viewController">
+                <viewController id="FBf-cr-bZ6" customClass="patternViewController" customModule="RegexExplorer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="I2Y-Cr-HO8">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bzZ-qo-5lZ">
-                                <rect key="frame" x="18" y="264" width="49" height="16"/>
+                                <rect key="frame" x="18" y="72" width="49" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Pattern" id="J4P-ul-ORk">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfP-ja-Daf">
+                                <rect key="frame" x="20" y="20" width="410" height="44"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="j1g-tO-g45">
+                                    <rect key="frame" x="0.0" y="0.0" width="410" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="df4-Uy-ruS">
+                                            <rect key="frame" x="0.0" y="0.0" width="410" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="410" height="44"/>
+                                            <size key="maxSize" width="410" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="cSD-VM-IYz">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="SRX-w6-Uia">
+                                    <rect key="frame" x="394" y="0.0" width="16" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="bzZ-qo-5lZ" firstAttribute="leading" secondItem="I2Y-Cr-HO8" secondAttribute="leading" constant="20" id="4IH-wY-IuT"/>
+                            <constraint firstItem="qfP-ja-Daf" firstAttribute="top" secondItem="bzZ-qo-5lZ" secondAttribute="bottom" constant="8" id="6Ec-o6-NJ7"/>
+                            <constraint firstItem="qfP-ja-Daf" firstAttribute="leading" secondItem="I2Y-Cr-HO8" secondAttribute="leading" constant="20" id="8ii-sp-r8h"/>
+                            <constraint firstAttribute="trailing" secondItem="qfP-ja-Daf" secondAttribute="trailing" constant="20" id="RSE-fD-pSu"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bzZ-qo-5lZ" secondAttribute="trailing" constant="385" id="S1L-y2-5Fg"/>
                             <constraint firstItem="bzZ-qo-5lZ" firstAttribute="top" secondItem="I2Y-Cr-HO8" secondAttribute="top" constant="20" id="b6N-0E-fV9"/>
+                            <constraint firstAttribute="bottom" secondItem="qfP-ja-Daf" secondAttribute="bottom" constant="20" id="foI-wg-Pzi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="patternScrollView" destination="qfP-ja-Daf" id="g3S-8T-G1P"/>
+                    </connections>
                 </viewController>
                 <customObject id="BcP-VF-tTd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-489" y="-152"/>
+            <point key="canvasLocation" x="-489" y="-248"/>
         </scene>
     </scenes>
 </document>

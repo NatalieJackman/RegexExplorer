@@ -16,6 +16,10 @@
 		DCEE704324141073009EA2E3 /* Pattern.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE704224141073009EA2E3 /* Pattern.storyboard */; };
 		DCEE704524141112009EA2E3 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE704424141112009EA2E3 /* Sample.storyboard */; };
 		DCEE704724141124009EA2E3 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE704624141124009EA2E3 /* Groups.storyboard */; };
+		DCEE704A2414179D009EA2E3 /* patternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE70492414179D009EA2E3 /* patternViewController.swift */; };
+		DCEE704C241418AF009EA2E3 /* sampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE704B241418AF009EA2E3 /* sampleViewController.swift */; };
+		DCEE704E241418BF009EA2E3 /* groupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE704D241418BF009EA2E3 /* groupsViewController.swift */; };
+		DCEE70522414194C009EA2E3 /* regexApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE70512414194C009EA2E3 /* regexApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		DCEE704224141073009EA2E3 /* Pattern.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pattern.storyboard; sourceTree = "<group>"; };
 		DCEE704424141112009EA2E3 /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
 		DCEE704624141124009EA2E3 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
+		DCEE70492414179D009EA2E3 /* patternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patternViewController.swift; sourceTree = "<group>"; };
+		DCEE704B241418AF009EA2E3 /* sampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleViewController.swift; sourceTree = "<group>"; };
+		DCEE704D241418BF009EA2E3 /* groupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsViewController.swift; sourceTree = "<group>"; };
+		DCEE70512414194C009EA2E3 /* regexApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = regexApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +140,9 @@
 		DCEE703E2414094C009EA2E3 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				DCEE70122414091F009EA2E3 /* AppDelegate.swift */,
+				DCEE705024141923009EA2E3 /* Delegates */,
+				DCEE704F24141919009EA2E3 /* Application */,
+				DCEE704824141776009EA2E3 /* NSViewControllers */,
 				DCEE70142414091F009EA2E3 /* ViewController.swift */,
 			);
 			path = Code;
@@ -147,6 +157,32 @@
 				DCEE704624141124009EA2E3 /* Groups.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DCEE704824141776009EA2E3 /* NSViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE70492414179D009EA2E3 /* patternViewController.swift */,
+				DCEE704B241418AF009EA2E3 /* sampleViewController.swift */,
+				DCEE704D241418BF009EA2E3 /* groupsViewController.swift */,
+			);
+			path = NSViewControllers;
+			sourceTree = "<group>";
+		};
+		DCEE704F24141919009EA2E3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE70512414194C009EA2E3 /* regexApplication.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DCEE705024141923009EA2E3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DCEE70122414091F009EA2E3 /* AppDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEE704E241418BF009EA2E3 /* groupsViewController.swift in Sources */,
+				DCEE704A2414179D009EA2E3 /* patternViewController.swift in Sources */,
+				DCEE70522414194C009EA2E3 /* regexApplication.swift in Sources */,
 				DCEE70152414091F009EA2E3 /* ViewController.swift in Sources */,
+				DCEE704C241418AF009EA2E3 /* sampleViewController.swift in Sources */,
 				DCEE70132414091F009EA2E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
