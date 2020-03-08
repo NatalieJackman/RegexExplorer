@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DC59231624141C8A00162AF9 /* mainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59231524141C8A00162AF9 /* mainWindow.swift */; };
+		DC65E90424144BE900566A8A /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65E90324144BE900566A8A /* Protocol.swift */; };
+		DC65E9072414505C00566A8A /* patternTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65E9062414505C00566A8A /* patternTextView.swift */; };
 		DCEE70132414091F009EA2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE70122414091F009EA2E3 /* AppDelegate.swift */; };
-		DCEE70152414091F009EA2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE70142414091F009EA2E3 /* ViewController.swift */; };
 		DCEE70172414091F009EA2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCEE70162414091F009EA2E3 /* Assets.xcassets */; };
 		DCEE701A2414091F009EA2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE70182414091F009EA2E3 /* Main.storyboard */; };
 		DCEE702624140920009EA2E3 /* RegexExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE702524140920009EA2E3 /* RegexExplorerTests.swift */; };
@@ -43,9 +44,10 @@
 
 /* Begin PBXFileReference section */
 		DC59231524141C8A00162AF9 /* mainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainWindow.swift; sourceTree = "<group>"; };
+		DC65E90324144BE900566A8A /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		DC65E9062414505C00566A8A /* patternTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patternTextView.swift; sourceTree = "<group>"; };
 		DCEE700F2414091F009EA2E3 /* RegexExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegexExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCEE70122414091F009EA2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCEE70142414091F009EA2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCEE70162414091F009EA2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCEE70192414091F009EA2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCEE701B2414091F009EA2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +99,22 @@
 				DC59231524141C8A00162AF9 /* mainWindow.swift */,
 			);
 			path = NSWindow;
+			sourceTree = "<group>";
+		};
+		DC65E90524144FF800566A8A /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				DC65E9082414506300566A8A /* NSTextViews */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		DC65E9082414506300566A8A /* NSTextViews */ = {
+			isa = PBXGroup;
+			children = (
+				DC65E9062414505C00566A8A /* patternTextView.swift */,
+			);
+			path = NSTextViews;
 			sourceTree = "<group>";
 		};
 		DCEE70062414091F009EA2E3 = {
@@ -157,7 +175,7 @@
 				DCEE705324141C0C009EA2E3 /* NSWindowController */,
 				DC59231424141C6700162AF9 /* NSWindow */,
 				DCEE704824141776009EA2E3 /* NSViewControllers */,
-				DCEE70142414091F009EA2E3 /* ViewController.swift */,
+				DC65E90524144FF800566A8A /* Controls */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -195,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				DCEE70122414091F009EA2E3 /* AppDelegate.swift */,
+				DC65E90324144BE900566A8A /* Protocol.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -345,7 +364,8 @@
 				DCEE704E241418BF009EA2E3 /* groupsViewController.swift in Sources */,
 				DCEE704A2414179D009EA2E3 /* patternViewController.swift in Sources */,
 				DCEE70522414194C009EA2E3 /* regexApplication.swift in Sources */,
-				DCEE70152414091F009EA2E3 /* ViewController.swift in Sources */,
+				DC65E9072414505C00566A8A /* patternTextView.swift in Sources */,
+				DC65E90424144BE900566A8A /* Protocol.swift in Sources */,
 				DCEE704C241418AF009EA2E3 /* sampleViewController.swift in Sources */,
 				DCEE70132414091F009EA2E3 /* AppDelegate.swift in Sources */,
 			);

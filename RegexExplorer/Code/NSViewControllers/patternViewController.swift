@@ -8,12 +8,18 @@
 
 import Cocoa
 
-class patternViewController: NSViewController
+class patternViewController: NSViewController, NSTextViewDelegate
 {
     @IBOutlet weak var patternScrollView: NSScrollView!
+    @IBOutlet var patternTextView: NSTextView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+    }
+    
+    override func complete(_ sender: Any?)
+    {
+        print ("complete patternTextView.string = \(patternTextView.string)")
     }
 }

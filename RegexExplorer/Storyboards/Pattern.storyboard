@@ -27,7 +27,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="410" height="44"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="df4-Uy-ruS">
+                                        <textView importsGraphics="NO" verticallyResizable="YES" continuousSpellChecking="YES" spellingCorrection="YES" smartInsertDelete="YES" id="df4-Uy-ruS" customClass="patternTextView" customModule="RegexExplorer" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="44"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -35,6 +35,9 @@
                                             <size key="minSize" width="410" height="44"/>
                                             <size key="maxSize" width="410" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="FBf-cr-bZ6" id="fFs-8x-n6U"/>
+                                            </connections>
                                         </textView>
                                     </subviews>
                                 </clipView>
@@ -60,6 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="patternScrollView" destination="qfP-ja-Daf" id="g3S-8T-G1P"/>
+                        <outlet property="patternTextView" destination="df4-Uy-ruS" id="4Z6-h6-jqw"/>
                     </connections>
                 </viewController>
                 <customObject id="BcP-VF-tTd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
