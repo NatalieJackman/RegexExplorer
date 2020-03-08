@@ -5,10 +5,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pattern View Controller-->
+        <!--PatternViewController-->
         <scene sceneID="bjQ-2E-grN">
             <objects>
-                <viewController id="FBf-cr-bZ6" customClass="patternViewController" customModule="RegexExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PatternViewController" id="FBf-cr-bZ6" customClass="patternViewController" customModule="RegexExplorer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="I2Y-Cr-HO8">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="108"/>
                         <autoresizingMask key="autoresizingMask"/>

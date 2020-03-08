@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class patternViewController: NSViewController, NSTextViewDelegate
+class patternViewController: NSViewController
 {
     @IBOutlet weak var patternScrollView: NSScrollView!
     @IBOutlet var patternTextView: NSTextView!
@@ -18,8 +18,8 @@ class patternViewController: NSViewController, NSTextViewDelegate
         super.viewDidLoad()
     }
     
-    override func complete(_ sender: Any?)
+    func SendSampleViewControllerPattern()
     {
-        print ("complete patternTextView.string = \(patternTextView.string)")
+        print("SendSampleViewControllerPattern")
     }
 }

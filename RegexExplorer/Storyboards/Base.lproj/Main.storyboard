@@ -687,7 +687,7 @@
                     <window key="window" title="Regex Explorer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="mainWindow" customModule="RegexExplorer" customModuleProvider="target">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="276" width="480" height="234"/>
+                        <rect key="contentRect" x="196" y="276" width="480" height="235"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <toolbar key="toolbar" implicitIdentifier="B2B2B9DF-1A6A-4854-9BFC-3220819E2580" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="pse-XC-h4d">
                             <allowedToolbarItems>
@@ -713,18 +713,19 @@
                         </connections>
                     </window>
                     <connections>
+                        <outlet property="mainWindowController" destination="IQv-IB-iLA" id="X1I-20-xL1"/>
                         <outlet property="runToolbarItem" destination="Gx7-pf-LCc" id="5pC-I7-Tb3"/>
                         <segue destination="eTS-HZ-fb0" kind="relationship" relationship="window.shadowedContentViewController" id="QnL-Rp-81h"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="268"/>
+            <point key="canvasLocation" x="75" y="268.5"/>
         </scene>
-        <!--Split View Controller-->
+        <!--SplitViewController-->
         <scene sceneID="JVK-CS-S6y">
             <objects>
-                <splitViewController id="eTS-HZ-fb0" sceneMemberID="viewController">
+                <splitViewController title="SplitViewController" storyboardIdentifier="SplitViewController" id="eTS-HZ-fb0" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="Jj6-ba-ZGp"/>
                         <splitViewItem id="51I-zo-GFS"/>
@@ -754,7 +755,7 @@
                 <controllerPlaceholder storyboardName="Pattern" id="X29-hx-X7D" sceneMemberID="viewController"/>
                 <customObject id="DUv-FC-QhG" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="603"/>
+            <point key="canvasLocation" x="484" y="587"/>
         </scene>
         <!--Sample-->
         <scene sceneID="vu8-Ye-vNK">
@@ -770,7 +771,7 @@
                 <controllerPlaceholder storyboardName="Groups" id="ENa-uu-1Tg" sceneMemberID="viewController"/>
                 <customObject id="EYQ-84-d1B" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="483" y="732"/>
+            <point key="canvasLocation" x="483" y="751"/>
         </scene>
     </scenes>
     <resources>

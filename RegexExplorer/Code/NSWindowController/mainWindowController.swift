@@ -11,6 +11,7 @@ import Cocoa
 class mainWindowController: NSWindowController
 {
     @IBOutlet weak var runToolbarItem: NSToolbarItem!
+    @IBOutlet weak var mainWindowController: mainWindow!
     
     override func windowDidLoad()
     {
@@ -19,5 +20,24 @@ class mainWindowController: NSWindowController
     
     @IBAction func runToolbar_Action(_ sender: Any)
     {
+        let patternViewController = GetViewControllerInSplitView(title: "PatternViewController") as! patternViewController
+        patternViewController.SendSampleViewControllerPattern()
+    }
+    
+    func GetViewControllerInSplitView(title:String) -> NSViewController
+    {
+        var viewController =  NSViewController()
+        if title.isEmpty == false
+        {
+            for childViewController in mainWindowController.contentViewController!.children
+            {
+                if childViewController.title == title
+                {
+                    viewController = childViewController
+                    break
+                }
+            }
+        }
+        return viewController
     }
 }

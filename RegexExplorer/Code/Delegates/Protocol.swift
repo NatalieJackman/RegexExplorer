@@ -10,5 +10,5 @@ import Cocoa
 
 protocol PatternProtocolDelegate
 {
-    func PatternChanged(pattern: NSString)
+    func PatternValueChanged(pattern: NSString)
 }
