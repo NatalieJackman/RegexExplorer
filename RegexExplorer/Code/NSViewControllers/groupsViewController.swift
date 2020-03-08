@@ -27,6 +27,7 @@ class GroupsViewController: NSViewController
                 let range = result.range(at: onRange)
                 let groupString = sample.substring(with: range)
                 groupsComboBox.addItem(withObjectValue: "group \(onRange+1): \(groupString)");
+                groupsComboBox.selectItem(at: 0)
             }
         }
     }
