@@ -25,7 +25,7 @@
                                 <rect key="frame" x="20" y="20" width="410" height="236"/>
                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="c9i-bt-V3M">
                                     <rect key="frame" x="0.0" y="0.0" width="410" height="236"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="ii1-WD-6jP">
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="236"/>
@@ -60,6 +60,7 @@
                     </view>
                     <connections>
                         <outlet property="sampleScrollView" destination="TkC-0g-8o4" id="167-YS-Du1"/>
+                        <outlet property="sampleTextView" destination="ii1-WD-6jP" id="Cn3-81-vjS"/>
                     </connections>
                 </viewController>
                 <customObject id="ay4-ph-YLr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

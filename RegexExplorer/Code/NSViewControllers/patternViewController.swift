@@ -13,8 +13,6 @@ class PatternViewController: NSViewController
     @IBOutlet weak var patternScrollView: NSScrollView!
     @IBOutlet var patternTextView: NSTextView!
     
-    var patternDelegate: PatternProtocolDelegate?
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()

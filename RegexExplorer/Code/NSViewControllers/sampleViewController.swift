@@ -11,6 +11,7 @@ import Cocoa
 class SampleViewController: NSViewController
 {
     @IBOutlet weak var sampleScrollView: NSScrollView!
+    @IBOutlet var sampleTextView: NSTextView!
     
     override func viewDidLoad()
     {
@@ -19,6 +20,15 @@ class SampleViewController: NSViewController
     
     func RunRegexMatch(pattern:String)
     {
-        print("sampleViewController runRegexMatch")
+        let length = sampleTextView.string.utf16.count
+        let range = NSRange(location: 0, length: length)
+        let regex = try! NSRegularExpression(pattern: pattern)
+        let results = regex.matches(in: sampleTextView.string, options: [], range: range)
+        for result in results
+        {
+            print("result.numberOfRanges is \(result.numberOfRanges)")
+        }
+        
+        print("sampleViewController runRegexMatch pattern is \(pattern)")
     }
 }
