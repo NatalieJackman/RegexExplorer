@@ -14,4 +14,12 @@ class GroupsViewController: NSViewController
     {
         super.viewDidLoad()
     }
+    
+    func ProcessRegexMatchResults(results:[NSTextCheckingResult])
+    {
+        for result in results
+        {
+            print("result.numberOfRanges is \(result.numberOfRanges)")
+        }
+    }
 }

@@ -18,17 +18,13 @@ class SampleViewController: NSViewController
         super.viewDidLoad()
     }
     
-    func RunRegexMatch(pattern:String)
+    func RunRegexMatch(pattern:String, groupsViewController: GroupsViewController)
     {
         let length = sampleTextView.string.utf16.count
         let range = NSRange(location: 0, length: length)
         let regex = try! NSRegularExpression(pattern: pattern)
         let results = regex.matches(in: sampleTextView.string, options: [], range: range)
-        for result in results
-        {
-            print("result.numberOfRanges is \(result.numberOfRanges)")
-        }
-        
+        groupsViewController.ProcessRegexMatchResults(results: results)
         print("sampleViewController runRegexMatch pattern is \(pattern)")
     }
 }

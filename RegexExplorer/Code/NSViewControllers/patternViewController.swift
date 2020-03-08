@@ -18,9 +18,9 @@ class PatternViewController: NSViewController
         super.viewDidLoad()
     }
     
-    func SendSampleViewControllerPattern(sampleViewController:SampleViewController)
+    func SendSampleViewControllerPattern(sampleViewController:SampleViewController, groupsViewController:GroupsViewController)
     {
         print("SendSampleViewControllerPattern")
-        sampleViewController.RunRegexMatch(pattern: patternTextView.string)
+        sampleViewController.RunRegexMatch(pattern: patternTextView.string, groupsViewController: groupsViewController)
     }
 }

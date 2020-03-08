@@ -22,7 +22,8 @@ class mainWindowController: NSWindowController
     {
         let patternViewController = GetViewControllerInSplitView(title: "PatternViewController") as! PatternViewController
         let sampleViewController = GetViewControllerInSplitView(title: "SampleViewController") as! SampleViewController
-        patternViewController.SendSampleViewControllerPattern(sampleViewController: sampleViewController)
+        let groupsViewController = GetViewControllerInSplitView(title: "GroupsViewController") as! GroupsViewController
+        patternViewController.SendSampleViewControllerPattern(sampleViewController: sampleViewController, groupsViewController:groupsViewController)
     }
     
     func GetViewControllerInSplitView(title:String) -> NSViewController
