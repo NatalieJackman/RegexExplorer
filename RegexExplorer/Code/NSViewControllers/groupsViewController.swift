@@ -17,8 +17,9 @@ class GroupsViewController: NSViewController
         super.viewDidLoad()
     }
     
-    func ProcessRegexMatchResults(results:[NSTextCheckingResult], sample:NSString)
+    func ProcessRegexMatchResults(results:[NSTextCheckingResult], sample:NSString, sampleViewController:SampleViewController)
     {
+        var groups = [String]()
         for result in results
         {
             let numberOfPasses = result.numberOfRanges - 1
@@ -28,7 +29,9 @@ class GroupsViewController: NSViewController
                 let groupString = sample.substring(with: range)
                 groupsComboBox.addItem(withObjectValue: "group \(onRange+1): \(groupString)");
                 groupsComboBox.selectItem(at: 0)
+                groups.insert(groupString, at: onRange)
             }
         }
+        sampleViewController.ProcessPatternFeedback(groups: groups)
     }
 }

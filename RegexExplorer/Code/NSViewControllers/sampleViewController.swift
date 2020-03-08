@@ -18,12 +18,20 @@ class SampleViewController: NSViewController
         super.viewDidLoad()
     }
     
+    func ProcessPatternFeedback(groups:[String])
+    {
+        for group in groups
+        {
+            print("group = \(group)")
+        }
+    }
+    
     func RunRegexMatch(pattern:String, groupsViewController: GroupsViewController)
     {
         let length = sampleTextView.string.utf16.count
         let range = NSRange(location: 0, length: length)
         let regex = try! NSRegularExpression(pattern: pattern)
         let results = regex.matches(in: sampleTextView.string, options: [], range: range)
-        groupsViewController.ProcessRegexMatchResults(results: results, sample:sampleTextView.string as NSString)
+        groupsViewController.ProcessRegexMatchResults(results: results, sample:sampleTextView.string as NSString, sampleViewController:self)
     }
 }
