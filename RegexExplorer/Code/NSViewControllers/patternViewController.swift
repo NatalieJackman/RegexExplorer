@@ -8,18 +8,21 @@
 
 import Cocoa
 
-class patternViewController: NSViewController
+class PatternViewController: NSViewController
 {
     @IBOutlet weak var patternScrollView: NSScrollView!
     @IBOutlet var patternTextView: NSTextView!
+    
+    var patternDelegate: PatternProtocolDelegate?
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
     }
     
-    func SendSampleViewControllerPattern()
+    func SendSampleViewControllerPattern(sampleViewController:SampleViewController)
     {
         print("SendSampleViewControllerPattern")
+        sampleViewController.RunRegexMatch(pattern: patternTextView.string)
     }
 }

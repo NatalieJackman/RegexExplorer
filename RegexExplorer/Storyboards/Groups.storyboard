@@ -8,7 +8,7 @@
         <!--GroupsViewController-->
         <scene sceneID="GRp-Kc-lJR">
             <objects>
-                <viewController title="GroupsViewController" id="9w1-a4-fbt" customClass="groupsViewController" customModule="RegexExplorer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="GroupsViewController" id="9w1-a4-fbt" customClass="GroupsViewController" customModule="RegexExplorer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="cQh-Fr-4Sy">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,7 +25,7 @@
                                 <rect key="frame" x="20" y="20" width="410" height="236"/>
                                 <clipView key="contentView" drawsBackground="NO" id="7y7-x9-7SQ">
                                     <rect key="frame" x="1" y="1" width="408" height="234"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="7SN-4K-yX5" id="v4i-Tv-cFj">
                                             <rect key="frame" x="0.0" y="0.0" width="408" height="234"/>

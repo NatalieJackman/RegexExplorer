@@ -8,12 +8,17 @@
 
 import Cocoa
 
-class sampleViewController: NSViewController
+class SampleViewController: NSViewController
 {
     @IBOutlet weak var sampleScrollView: NSScrollView!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+    }
+    
+    func RunRegexMatch(pattern:String)
+    {
+        print("sampleViewController runRegexMatch")
     }
 }

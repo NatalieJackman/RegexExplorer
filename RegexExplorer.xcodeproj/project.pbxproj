@@ -18,9 +18,9 @@
 		DCEE704324141073009EA2E3 /* Pattern.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE704224141073009EA2E3 /* Pattern.storyboard */; };
 		DCEE704524141112009EA2E3 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE704424141112009EA2E3 /* Sample.storyboard */; };
 		DCEE704724141124009EA2E3 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEE704624141124009EA2E3 /* Groups.storyboard */; };
-		DCEE704A2414179D009EA2E3 /* patternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE70492414179D009EA2E3 /* patternViewController.swift */; };
-		DCEE704C241418AF009EA2E3 /* sampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE704B241418AF009EA2E3 /* sampleViewController.swift */; };
-		DCEE704E241418BF009EA2E3 /* groupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE704D241418BF009EA2E3 /* groupsViewController.swift */; };
+		DCEE704A2414179D009EA2E3 /* PatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE70492414179D009EA2E3 /* PatternViewController.swift */; };
+		DCEE704C241418AF009EA2E3 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE704B241418AF009EA2E3 /* SampleViewController.swift */; };
+		DCEE704E241418BF009EA2E3 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE704D241418BF009EA2E3 /* GroupsViewController.swift */; };
 		DCEE70522414194C009EA2E3 /* regexApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE70512414194C009EA2E3 /* regexApplication.swift */; };
 		DCEE705524141C34009EA2E3 /* mainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE705424141C34009EA2E3 /* mainWindowController.swift */; };
 /* End PBXBuildFile section */
@@ -61,9 +61,9 @@
 		DCEE704224141073009EA2E3 /* Pattern.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pattern.storyboard; sourceTree = "<group>"; };
 		DCEE704424141112009EA2E3 /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
 		DCEE704624141124009EA2E3 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
-		DCEE70492414179D009EA2E3 /* patternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patternViewController.swift; sourceTree = "<group>"; };
-		DCEE704B241418AF009EA2E3 /* sampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleViewController.swift; sourceTree = "<group>"; };
-		DCEE704D241418BF009EA2E3 /* groupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsViewController.swift; sourceTree = "<group>"; };
+		DCEE70492414179D009EA2E3 /* PatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternViewController.swift; sourceTree = "<group>"; };
+		DCEE704B241418AF009EA2E3 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		DCEE704D241418BF009EA2E3 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		DCEE70512414194C009EA2E3 /* regexApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = regexApplication.swift; sourceTree = "<group>"; };
 		DCEE705424141C34009EA2E3 /* mainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,9 +194,9 @@
 		DCEE704824141776009EA2E3 /* NSViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DCEE70492414179D009EA2E3 /* patternViewController.swift */,
-				DCEE704B241418AF009EA2E3 /* sampleViewController.swift */,
-				DCEE704D241418BF009EA2E3 /* groupsViewController.swift */,
+				DCEE70492414179D009EA2E3 /* PatternViewController.swift */,
+				DCEE704B241418AF009EA2E3 /* SampleViewController.swift */,
+				DCEE704D241418BF009EA2E3 /* GroupsViewController.swift */,
 			);
 			path = NSViewControllers;
 			sourceTree = "<group>";
@@ -361,12 +361,12 @@
 			files = (
 				DC59231624141C8A00162AF9 /* mainWindow.swift in Sources */,
 				DCEE705524141C34009EA2E3 /* mainWindowController.swift in Sources */,
-				DCEE704E241418BF009EA2E3 /* groupsViewController.swift in Sources */,
-				DCEE704A2414179D009EA2E3 /* patternViewController.swift in Sources */,
+				DCEE704E241418BF009EA2E3 /* GroupsViewController.swift in Sources */,
+				DCEE704A2414179D009EA2E3 /* PatternViewController.swift in Sources */,
 				DCEE70522414194C009EA2E3 /* regexApplication.swift in Sources */,
 				DC65E9072414505C00566A8A /* patternTextView.swift in Sources */,
 				DC65E90424144BE900566A8A /* Protocol.swift in Sources */,
-				DCEE704C241418AF009EA2E3 /* sampleViewController.swift in Sources */,
+				DCEE704C241418AF009EA2E3 /* SampleViewController.swift in Sources */,
 				DCEE70132414091F009EA2E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

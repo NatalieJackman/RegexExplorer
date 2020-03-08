@@ -20,8 +20,9 @@ class mainWindowController: NSWindowController
     
     @IBAction func runToolbar_Action(_ sender: Any)
     {
-        let patternViewController = GetViewControllerInSplitView(title: "PatternViewController") as! patternViewController
-        patternViewController.SendSampleViewControllerPattern()
+        let patternViewController = GetViewControllerInSplitView(title: "PatternViewController") as! PatternViewController
+        let sampleViewController = GetViewControllerInSplitView(title: "SampleViewController") as! SampleViewController
+        patternViewController.SendSampleViewControllerPattern(sampleViewController: sampleViewController)
     }
     
     func GetViewControllerInSplitView(title:String) -> NSViewController

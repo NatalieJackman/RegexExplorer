@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class groupsViewController: NSViewController
+class GroupsViewController: NSViewController
 {
     override func viewDidLoad()
     {

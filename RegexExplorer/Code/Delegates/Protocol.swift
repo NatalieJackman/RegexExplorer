@@ -8,6 +8,11 @@
 
 import Cocoa
 
+protocol SampleProtocolDelegate
+{
+    func RunRegexMatch(pattern:NSString)
+}
+
 protocol PatternProtocolDelegate
 {
     func PatternValueChanged(pattern: NSString)
