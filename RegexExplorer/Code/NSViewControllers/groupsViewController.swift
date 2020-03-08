@@ -10,16 +10,24 @@ import Cocoa
 
 class GroupsViewController: NSViewController
 {
+    @IBOutlet weak var groupsComboBox: NSComboBox!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
     }
     
-    func ProcessRegexMatchResults(results:[NSTextCheckingResult])
+    func ProcessRegexMatchResults(results:[NSTextCheckingResult], sample:NSString)
     {
         for result in results
         {
-            print("result.numberOfRanges is \(result.numberOfRanges)")
+            let numberOfPasses = result.numberOfRanges - 1
+            for onRange in 0...numberOfPasses
+            {
+                let range = result.range(at: onRange)
+                let groupString = sample.substring(with: range)
+                groupsComboBox.addItem(withObjectValue: "group \(onRange+1): \(groupString)");
+            }
         }
     }
 }

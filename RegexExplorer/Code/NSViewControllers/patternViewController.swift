@@ -20,7 +20,6 @@ class PatternViewController: NSViewController
     
     func SendSampleViewControllerPattern(sampleViewController:SampleViewController, groupsViewController:GroupsViewController)
     {
-        print("SendSampleViewControllerPattern")
         sampleViewController.RunRegexMatch(pattern: patternTextView.string, groupsViewController: groupsViewController)
     }
 }
