@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC560E412415AEA7007A5F62 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC560E402415AEA7007A5F62 /* Settings.storyboard */; };
 		DC59231624141C8A00162AF9 /* mainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC59231524141C8A00162AF9 /* mainWindow.swift */; };
 		DC65E90424144BE900566A8A /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65E90324144BE900566A8A /* Protocol.swift */; };
 		DC65E9072414505C00566A8A /* patternTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC65E9062414505C00566A8A /* patternTextView.swift */; };
@@ -23,6 +24,7 @@
 		DCEE704E241418BF009EA2E3 /* groupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE704D241418BF009EA2E3 /* groupsViewController.swift */; };
 		DCEE70522414194C009EA2E3 /* regexApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE70512414194C009EA2E3 /* regexApplication.swift */; };
 		DCEE705524141C34009EA2E3 /* mainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE705424141C34009EA2E3 /* mainWindowController.swift */; };
+		DCFCE6712415DC4A00ACB898 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFCE6702415DC4A00ACB898 /* Globals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC560E402415AEA7007A5F62 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		DC59231524141C8A00162AF9 /* mainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainWindow.swift; sourceTree = "<group>"; };
 		DC65E90324144BE900566A8A /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		DC65E9062414505C00566A8A /* patternTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = patternTextView.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		DCEE704D241418BF009EA2E3 /* groupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = groupsViewController.swift; sourceTree = "<group>"; };
 		DCEE70512414194C009EA2E3 /* regexApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = regexApplication.swift; sourceTree = "<group>"; };
 		DCEE705424141C34009EA2E3 /* mainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainWindowController.swift; sourceTree = "<group>"; };
+		DCFCE6702415DC4A00ACB898 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +191,7 @@
 				DCEE704224141073009EA2E3 /* Pattern.storyboard */,
 				DCEE704424141112009EA2E3 /* Sample.storyboard */,
 				DCEE704624141124009EA2E3 /* Groups.storyboard */,
+				DC560E402415AEA7007A5F62 /* Settings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				DCEE70512414194C009EA2E3 /* regexApplication.swift */,
+				DCFCE6702415DC4A00ACB898 /* Globals.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -333,6 +339,7 @@
 				DCEE704724141124009EA2E3 /* Groups.storyboard in Resources */,
 				DCEE70172414091F009EA2E3 /* Assets.xcassets in Resources */,
 				DCEE704324141073009EA2E3 /* Pattern.storyboard in Resources */,
+				DC560E412415AEA7007A5F62 /* Settings.storyboard in Resources */,
 				DCEE704524141112009EA2E3 /* Sample.storyboard in Resources */,
 				DCEE701A2414091F009EA2E3 /* Main.storyboard in Resources */,
 			);
@@ -367,6 +374,7 @@
 				DC65E9072414505C00566A8A /* patternTextView.swift in Sources */,
 				DC65E90424144BE900566A8A /* Protocol.swift in Sources */,
 				DCEE704C241418AF009EA2E3 /* sampleViewController.swift in Sources */,
+				DCFCE6712415DC4A00ACB898 /* Globals.swift in Sources */,
 				DCEE70132414091F009EA2E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

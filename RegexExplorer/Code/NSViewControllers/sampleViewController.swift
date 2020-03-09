@@ -18,11 +18,11 @@ class SampleViewController: NSViewController
         super.viewDidLoad()
     }
     
-    func ProcessPatternFeedback(groups:[String])
+    func ProcessPatternFeedback(groups:[RegexGroup])
     {
         for group in groups
         {
-            print("group = \(group)")
+            print("group.value = \(group.value)")
         }
     }
     
