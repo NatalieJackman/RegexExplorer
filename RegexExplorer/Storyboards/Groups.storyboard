@@ -10,11 +10,11 @@
             <objects>
                 <viewController title="GroupsViewController" id="9w1-a4-fbt" customClass="GroupsViewController" customModule="RegexExplorer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="cQh-Fr-4Sy">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="117"/>
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="118"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HIR-wI-jQh">
-                                <rect key="frame" x="12" y="81" width="49" height="16"/>
+                                <rect key="frame" x="12" y="82" width="49" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Groups" id="28X-2x-drz">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -22,7 +22,7 @@
                                 </textFieldCell>
                             </textField>
                             <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U0Y-uL-vGM">
-                                <rect key="frame" x="15" y="47" width="412" height="25"/>
+                                <rect key="frame" x="15" y="48" width="412" height="25"/>
                                 <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="0hP-EL-bgg">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -33,9 +33,10 @@
                                 </connections>
                             </comboBox>
                             <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="rZ0-Fr-aIx">
-                                <rect key="frame" x="55" y="20" width="44" height="23"/>
+                                <rect key="frame" x="55" y="21" width="44" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="MCv-2G-e8p"/>
+                                    <constraint firstAttribute="height" constant="23" id="BPQ-Ul-oEY"/>
+                                    <constraint firstAttribute="width" constant="44" id="N42-9S-A4K"/>
                                 </constraints>
                                 <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -43,7 +44,7 @@
                                 </connections>
                             </colorWell>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xdQ-IL-X2t">
-                                <rect key="frame" x="12" y="24" width="37" height="16"/>
+                                <rect key="frame" x="12" y="24" width="37" height="17"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Color" id="IKV-hE-beQ">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -52,19 +53,18 @@
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="rZ0-Fr-aIx" secondAttribute="trailing" constant="351" id="0Xf-IG-t0F"/>
                             <constraint firstItem="HIR-wI-jQh" firstAttribute="top" secondItem="cQh-Fr-4Sy" secondAttribute="top" constant="20" id="5Qb-ZS-Ia5"/>
+                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="leading" secondItem="xdQ-IL-X2t" secondAttribute="trailing" constant="8" symbolic="YES" id="6g3-Bj-puG"/>
                             <constraint firstItem="HIR-wI-jQh" firstAttribute="leading" secondItem="cQh-Fr-4Sy" secondAttribute="leading" constant="14" id="6ou-xe-hxc"/>
                             <constraint firstItem="U0Y-uL-vGM" firstAttribute="leading" secondItem="cQh-Fr-4Sy" secondAttribute="leading" constant="15" id="7QL-2R-SWG"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xdQ-IL-X2t" secondAttribute="bottom" constant="24" id="FfA-PK-bqu"/>
                             <constraint firstAttribute="trailing" secondItem="U0Y-uL-vGM" secondAttribute="trailing" constant="26" id="cwX-dZ-SaX"/>
+                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="centerY" secondItem="xdQ-IL-X2t" secondAttribute="centerY" id="k0U-mg-hO3"/>
                             <constraint firstItem="xdQ-IL-X2t" firstAttribute="leading" secondItem="cQh-Fr-4Sy" secondAttribute="leading" constant="14" id="lvD-IS-VXo"/>
                             <constraint firstItem="xdQ-IL-X2t" firstAttribute="top" secondItem="U0Y-uL-vGM" secondAttribute="bottom" constant="11" id="nEi-2E-geT"/>
+                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="top" secondItem="U0Y-uL-vGM" secondAttribute="bottom" constant="8" symbolic="YES" id="nUR-mW-ZLj"/>
                             <constraint firstItem="U0Y-uL-vGM" firstAttribute="top" secondItem="HIR-wI-jQh" secondAttribute="bottom" constant="11" id="pgH-tL-mx2"/>
-                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="top" secondItem="U0Y-uL-vGM" secondAttribute="bottom" constant="8" id="pnb-u5-EW7"/>
-                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="leading" secondItem="xdQ-IL-X2t" secondAttribute="trailing" constant="8" id="qkG-K3-fW6"/>
                             <constraint firstAttribute="trailing" secondItem="HIR-wI-jQh" secondAttribute="trailing" constant="391" id="qui-FR-HoY"/>
-                            <constraint firstAttribute="bottom" secondItem="rZ0-Fr-aIx" secondAttribute="bottom" constant="20" id="v51-4f-hlg"/>
                         </constraints>
                     </view>
                     <connections>
