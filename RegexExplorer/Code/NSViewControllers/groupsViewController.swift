@@ -61,6 +61,7 @@ class GroupsViewController: NSViewController
                 
                 regexGroup.value = groupString
                 regexGroup.color = GetGroupColor(number: onRange)
+                regexGroup.range = range
                 groups.insert(regexGroup, at: onRange)
                 groupsComboBox.selectItem(at: 0)
                 groupsColorWell.color = GetGroupColor(number: 0)

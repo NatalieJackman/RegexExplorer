@@ -22,7 +22,7 @@ class SampleViewController: NSViewController
     {
         for group in groups
         {
-            print("group.value = \(group.value)")
+            sampleTextView.setTextColor(group.color, range: group.range)
         }
     }
     
