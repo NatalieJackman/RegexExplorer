@@ -14,6 +14,9 @@ class GroupsViewController: NSViewController
     @IBOutlet weak var groupsColorWell: NSColorWell!
     
     var groupColor = [NSColor]()
+    var groups = [RegexGroup]()
+    
+    var sampleViewController = SampleViewController()
     
     override func viewDidLoad()
     {
@@ -28,6 +31,8 @@ class GroupsViewController: NSViewController
     @IBAction func groupsColorWell_Action(_ sender: Any)
     {
         groupColor[groupsComboBox.indexOfSelectedItem] = groupsColorWell.color
+        groups[groupsComboBox.indexOfSelectedItem].color = groupsColorWell.color
+        sampleViewController.ProcessPatternFeedback(groups: groups)
     }
     
     func GetGroupColor(number:Int) -> NSColor
@@ -47,8 +52,9 @@ class GroupsViewController: NSViewController
     
     func ProcessRegexMatchResults(results:[NSTextCheckingResult], sample:NSString, sampleViewController:SampleViewController)
     {
-        var groups = [RegexGroup]()
+        groups.removeAll()
         groupsComboBox.removeAllItems()
+        self.sampleViewController = sampleViewController
         for result in results
         {
             let numberOfPasses = result.numberOfRanges - 1
