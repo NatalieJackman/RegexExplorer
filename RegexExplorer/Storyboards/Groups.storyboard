@@ -10,11 +10,11 @@
             <objects>
                 <viewController title="GroupsViewController" id="9w1-a4-fbt" customClass="GroupsViewController" customModule="RegexExplorer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="cQh-Fr-4Sy">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="118"/>
+                        <rect key="frame" x="0.0" y="0.0" width="449" height="144"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HIR-wI-jQh">
-                                <rect key="frame" x="12" y="82" width="49" height="16"/>
+                                <rect key="frame" x="18" y="108" width="49" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Groups" id="28X-2x-drz">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -22,7 +22,7 @@
                                 </textFieldCell>
                             </textField>
                             <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U0Y-uL-vGM">
-                                <rect key="frame" x="15" y="48" width="412" height="25"/>
+                                <rect key="frame" x="21" y="74" width="412" height="25"/>
                                 <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="0hP-EL-bgg">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -33,10 +33,10 @@
                                 </connections>
                             </comboBox>
                             <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="rZ0-Fr-aIx">
-                                <rect key="frame" x="55" y="21" width="44" height="23"/>
+                                <rect key="frame" x="95" y="47" width="96" height="23"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="23" id="BPQ-Ul-oEY"/>
-                                    <constraint firstAttribute="width" constant="44" id="N42-9S-A4K"/>
+                                    <constraint firstAttribute="height" constant="23" id="58R-7r-I9F"/>
+                                    <constraint firstAttribute="width" constant="96" id="FYA-MI-hc1"/>
                                 </constraints>
                                 <color key="color" red="0.05813049898" green="0.055541899059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -44,37 +44,88 @@
                                 </connections>
                             </colorWell>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xdQ-IL-X2t">
-                                <rect key="frame" x="12" y="24" width="37" height="17"/>
+                                <rect key="frame" x="18" y="51" width="37" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Color" id="IKV-hE-beQ">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="doG-h1-lMp">
+                                <rect key="frame" x="19" y="22" width="70" height="17"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Font Name" id="JIz-K7-sAZ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vLa-oo-xN3">
+                                <rect key="frame" x="95" y="16" width="338" height="25"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="7E9-PU-nyR">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </comboBoxCell>
+                                <connections>
+                                    <action selector="groupsFontNameComboBox_Action:" target="9w1-a4-fbt" id="z5K-Tp-j1G"/>
+                                </connections>
+                            </comboBox>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cpT-QX-g8F">
+                                <rect key="frame" x="207" y="51" width="30" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Size" id="O5x-Um-eAF">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EjW-iG-v3C">
+                                <rect key="frame" x="243" y="45" width="190" height="26"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="ZdZ-tr-ZHu">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </comboBoxCell>
+                                <connections>
+                                    <action selector="groupsFontSizeComboBox_Action:" target="9w1-a4-fbt" id="uho-1T-IgE"/>
+                                </connections>
+                            </comboBox>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="HIR-wI-jQh" firstAttribute="top" secondItem="cQh-Fr-4Sy" secondAttribute="top" constant="20" id="5Qb-ZS-Ia5"/>
-                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="leading" secondItem="xdQ-IL-X2t" secondAttribute="trailing" constant="8" symbolic="YES" id="6g3-Bj-puG"/>
-                            <constraint firstItem="HIR-wI-jQh" firstAttribute="leading" secondItem="cQh-Fr-4Sy" secondAttribute="leading" constant="14" id="6ou-xe-hxc"/>
-                            <constraint firstItem="U0Y-uL-vGM" firstAttribute="leading" secondItem="cQh-Fr-4Sy" secondAttribute="leading" constant="15" id="7QL-2R-SWG"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xdQ-IL-X2t" secondAttribute="bottom" constant="24" id="FfA-PK-bqu"/>
-                            <constraint firstAttribute="trailing" secondItem="U0Y-uL-vGM" secondAttribute="trailing" constant="26" id="cwX-dZ-SaX"/>
-                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="centerY" secondItem="xdQ-IL-X2t" secondAttribute="centerY" id="k0U-mg-hO3"/>
-                            <constraint firstItem="xdQ-IL-X2t" firstAttribute="leading" secondItem="cQh-Fr-4Sy" secondAttribute="leading" constant="14" id="lvD-IS-VXo"/>
-                            <constraint firstItem="xdQ-IL-X2t" firstAttribute="top" secondItem="U0Y-uL-vGM" secondAttribute="bottom" constant="11" id="nEi-2E-geT"/>
-                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="top" secondItem="U0Y-uL-vGM" secondAttribute="bottom" constant="8" symbolic="YES" id="nUR-mW-ZLj"/>
-                            <constraint firstItem="U0Y-uL-vGM" firstAttribute="top" secondItem="HIR-wI-jQh" secondAttribute="bottom" constant="11" id="pgH-tL-mx2"/>
-                            <constraint firstAttribute="trailing" secondItem="HIR-wI-jQh" secondAttribute="trailing" constant="391" id="qui-FR-HoY"/>
+                            <constraint firstItem="HIR-wI-jQh" firstAttribute="leading" secondItem="xdQ-IL-X2t" secondAttribute="leading" id="7ET-jS-Mf6"/>
+                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="top" secondItem="U0Y-uL-vGM" secondAttribute="bottom" constant="8" symbolic="YES" id="Bqq-x5-3K9"/>
+                            <constraint firstItem="xdQ-IL-X2t" firstAttribute="centerY" secondItem="rZ0-Fr-aIx" secondAttribute="centerY" id="EgY-j9-jWD"/>
+                            <constraint firstItem="HIR-wI-jQh" firstAttribute="top" secondItem="cQh-Fr-4Sy" secondAttribute="top" constant="20" symbolic="YES" id="GRD-ZC-Kgg"/>
+                            <constraint firstItem="U0Y-uL-vGM" firstAttribute="leading" secondItem="doG-h1-lMp" secondAttribute="leading" id="HMY-Uv-gCL"/>
+                            <constraint firstItem="U0Y-uL-vGM" firstAttribute="top" secondItem="HIR-wI-jQh" secondAttribute="bottom" constant="11" id="IGr-Rc-x2C"/>
+                            <constraint firstItem="doG-h1-lMp" firstAttribute="top" secondItem="xdQ-IL-X2t" secondAttribute="bottom" constant="12" id="N9m-l8-DkN"/>
+                            <constraint firstItem="EjW-iG-v3C" firstAttribute="leading" secondItem="cpT-QX-g8F" secondAttribute="trailing" constant="8" symbolic="YES" id="PIF-YA-hcw"/>
+                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="leading" secondItem="vLa-oo-xN3" secondAttribute="leading" id="Rdf-pG-IY3"/>
+                            <constraint firstItem="cpT-QX-g8F" firstAttribute="baseline" secondItem="xdQ-IL-X2t" secondAttribute="firstBaseline" id="T6r-Vk-uoH"/>
+                            <constraint firstItem="vLa-oo-xN3" firstAttribute="leading" secondItem="doG-h1-lMp" secondAttribute="trailing" constant="8" symbolic="YES" id="YLc-37-8Aq"/>
+                            <constraint firstItem="vLa-oo-xN3" firstAttribute="top" secondItem="rZ0-Fr-aIx" secondAttribute="bottom" constant="8" symbolic="YES" id="Zka-CT-Kg1"/>
+                            <constraint firstItem="EjW-iG-v3C" firstAttribute="baseline" secondItem="cpT-QX-g8F" secondAttribute="firstBaseline" id="cPE-Yk-d4I"/>
+                            <constraint firstItem="HIR-wI-jQh" firstAttribute="leading" secondItem="cQh-Fr-4Sy" secondAttribute="leading" constant="20" symbolic="YES" id="ebb-cG-Ftf"/>
+                            <constraint firstItem="EjW-iG-v3C" firstAttribute="trailing" secondItem="vLa-oo-xN3" secondAttribute="trailing" id="f94-MM-wNr"/>
+                            <constraint firstItem="rZ0-Fr-aIx" firstAttribute="leading" secondItem="xdQ-IL-X2t" secondAttribute="trailing" constant="42" id="iXk-Wq-8IA"/>
+                            <constraint firstAttribute="trailing" secondItem="U0Y-uL-vGM" secondAttribute="trailing" constant="19" id="jds-YA-unk"/>
+                            <constraint firstItem="cpT-QX-g8F" firstAttribute="leading" secondItem="rZ0-Fr-aIx" secondAttribute="trailing" constant="18" id="muY-WG-PjV"/>
+                            <constraint firstItem="U0Y-uL-vGM" firstAttribute="trailing" secondItem="EjW-iG-v3C" secondAttribute="trailing" id="vzr-GE-bgo"/>
+                            <constraint firstItem="cpT-QX-g8F" firstAttribute="baseline" secondItem="EjW-iG-v3C" secondAttribute="baseline" id="xIT-Ws-2e6"/>
+                            <constraint firstItem="cpT-QX-g8F" firstAttribute="centerY" secondItem="EjW-iG-v3C" secondAttribute="centerY" id="yl5-1q-OZd"/>
+                            <constraint firstAttribute="bottom" secondItem="vLa-oo-xN3" secondAttribute="bottom" constant="20" symbolic="YES" id="z9y-bN-PXH"/>
+                            <constraint firstItem="doG-h1-lMp" firstAttribute="baseline" secondItem="vLa-oo-xN3" secondAttribute="firstBaseline" id="zxz-g4-Q4J"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="groupsColorWell" destination="rZ0-Fr-aIx" id="I6Q-Tf-FT1"/>
                         <outlet property="groupsComboBox" destination="U0Y-uL-vGM" id="S1n-9f-wLd"/>
+                        <outlet property="groupsFontNameComboBox" destination="vLa-oo-xN3" id="HSM-ld-XhZ"/>
+                        <outlet property="groupsFontSizeComboBox" destination="EjW-iG-v3C" id="GUN-fy-8R4"/>
                     </connections>
                 </viewController>
                 <customObject id="ePe-El-CJF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-195" y="-129.5"/>
+            <point key="canvasLocation" x="-195" y="-117"/>
         </scene>
     </scenes>
 </document>

@@ -13,4 +13,5 @@ class RegexGroup
     var value = String()
     var color = NSColor()
     var range = NSRange()
+    var font = NSFont()
 }

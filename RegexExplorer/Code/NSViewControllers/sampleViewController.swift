@@ -16,6 +16,7 @@ class SampleViewController: NSViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        sampleTextView.font = NSFont(name: "Arial", size: CGFloat(15))
     }
     
     func ProcessPatternFeedback(groups:[RegexGroup])
@@ -23,6 +24,7 @@ class SampleViewController: NSViewController
         for group in groups
         {
             sampleTextView.setTextColor(group.color, range: group.range)
+            sampleTextView.font = group.font
         }
     }
     

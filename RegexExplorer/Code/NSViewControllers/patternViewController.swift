@@ -16,6 +16,7 @@ class PatternViewController: NSViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        patternTextView.font = NSFont(name: "Arial", size: CGFloat(15))
     }
     
     func SendSampleViewControllerPattern(sampleViewController:SampleViewController, groupsViewController:GroupsViewController)

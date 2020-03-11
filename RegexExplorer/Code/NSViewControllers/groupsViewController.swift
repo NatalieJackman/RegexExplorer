@@ -7,11 +7,14 @@
 //
 
 import Cocoa
+import SystemExtensions
 
 class GroupsViewController: NSViewController
 {
     @IBOutlet weak var groupsComboBox: NSComboBox!
     @IBOutlet weak var groupsColorWell: NSColorWell!
+    @IBOutlet weak var groupsFontSizeComboBox: NSComboBox!
+    @IBOutlet weak var groupsFontNameComboBox: NSComboBox!
     
     var groupColor = [NSColor]()
     var groups = [RegexGroup]()
@@ -21,6 +24,16 @@ class GroupsViewController: NSViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        for font in NSFontManager.shared.availableFontFamilies
+        {
+            groupsFontNameComboBox.addItem(withObjectValue: font)
+        }
+        for size in 1 ... 30
+        {
+            groupsFontSizeComboBox.addItem(withObjectValue: size)
+        }
+        groupsFontNameComboBox.selectItem(withObjectValue: "Arial")
+        groupsFontSizeComboBox.selectItem(withObjectValue: 15)
     }
     
     @IBAction func groupsComboBox_Action(_ sender: Any)
@@ -33,6 +46,25 @@ class GroupsViewController: NSViewController
         groupColor[groupsComboBox.indexOfSelectedItem] = groupsColorWell.color
         groups[groupsComboBox.indexOfSelectedItem].color = groupsColorWell.color
         sampleViewController.ProcessPatternFeedback(groups: groups)
+    }
+    
+    @IBAction func groupsFontNameComboBox_Action(_ sender: Any)
+    {
+        ProcessFontParameterChange()
+    }
+    
+    @IBAction func groupsFontSizeComboBox_Action(_ sender: Any)
+    {
+        ProcessFontParameterChange()
+    }
+    
+    func ProcessFontParameterChange()
+    {
+        if groups.count > 1
+        {
+            groups[groupsComboBox.indexOfSelectedItem].font = NSFont(name: groupsFontNameComboBox.stringValue, size: CGFloat(groupsFontSizeComboBox!.intValue))!
+            sampleViewController.ProcessPatternFeedback(groups: groups)
+        }
     }
     
     func GetGroupColor(number:Int) -> NSColor
@@ -67,6 +99,7 @@ class GroupsViewController: NSViewController
                 
                 regexGroup.value = groupString
                 regexGroup.color = GetGroupColor(number: onRange)
+                regexGroup.font = NSFont(name: groupsFontNameComboBox.stringValue, size: CGFloat(groupsFontSizeComboBox!.intValue))!
                 regexGroup.range = range
                 groups.insert(regexGroup, at: onRange)
                 groupsComboBox.selectItem(at: 0)
