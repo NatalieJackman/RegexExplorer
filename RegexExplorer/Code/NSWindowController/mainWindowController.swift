@@ -11,19 +11,43 @@ import Cocoa
 class mainWindowController: NSWindowController
 {
     @IBOutlet weak var runToolbarItem: NSToolbarItem!
+    @IBOutlet weak var addToolbarItem: NSToolbarItem!
     @IBOutlet weak var mainWindowController: mainWindow!
+    
+    var initialized = false
+    var patternViewController = PatternViewController()
+    var sampleViewController = SampleViewController()
+    var groupsViewController = GroupsViewController()
     
     override func windowDidLoad()
     {
         super.windowDidLoad()
     }
     
-    @IBAction func runToolbar_Action(_ sender: Any)
+    @IBAction func runToolbarItem_Action(_ sender: Any)
     {
-        let patternViewController = GetViewControllerInSplitView(title: "PatternViewController") as! PatternViewController
-        let sampleViewController = GetViewControllerInSplitView(title: "SampleViewController") as! SampleViewController
-        let groupsViewController = GetViewControllerInSplitView(title: "GroupsViewController") as! GroupsViewController
+        if initialized == false
+        {
+            initialize()
+        }
         patternViewController.SendSampleViewControllerPattern(sampleViewController: sampleViewController, groupsViewController:groupsViewController)
+    }
+    
+    @IBAction func addToolbarItem_Action(_ sender: Any)
+    {
+        if initialized == false
+        {
+            initialize()
+        }
+        
+    }
+    
+    func initialize()
+    {
+        initialized = true
+        patternViewController = GetViewControllerInSplitView(title: "PatternViewController") as! PatternViewController
+        sampleViewController = GetViewControllerInSplitView(title: "SampleViewController") as! SampleViewController
+        groupsViewController = GetViewControllerInSplitView(title: "GroupsViewController") as! GroupsViewController
     }
     
     func GetViewControllerInSplitView(title:String) -> NSViewController

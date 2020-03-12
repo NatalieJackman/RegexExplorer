@@ -23,4 +23,9 @@ class PatternViewController: NSViewController
     {
         sampleViewController.RunRegexMatch(pattern: patternTextView.string, groupsViewController: groupsViewController)
     }
+    
+    func AddGroupToPattern(groupValue:NSString, groupName:NSString, parent:NSString)
+    {
+        
+    }
 }

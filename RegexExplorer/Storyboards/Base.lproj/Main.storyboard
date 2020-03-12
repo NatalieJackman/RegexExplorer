@@ -430,6 +430,14 @@
             </objects>
             <point key="canvasLocation" x="516" y="0.0"/>
         </scene>
+        <!--add-->
+        <scene sceneID="fYf-tV-ead">
+            <objects>
+                <controllerPlaceholder storyboardName="add" id="VaT-fL-UEu" sceneMemberID="viewController"/>
+                <customObject id="kfl-pd-yg6" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="232"/>
+        </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
@@ -445,7 +453,15 @@
                                     <size key="minSize" width="14" height="14"/>
                                     <size key="maxSize" width="14" height="14"/>
                                     <connections>
-                                        <action selector="runToolbar_Action:" target="B8D-0N-5wS" id="e3I-uF-Jds"/>
+                                        <action selector="runToolbarItem_Action:" target="B8D-0N-5wS" id="e3I-uF-Jds"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="52C45516-7AB9-49A6-A858-9F1FD77DA7A0" label="Add Group" paletteLabel="Add Group" tag="-1" image="NSAddTemplate" id="faf-gF-W5i">
+                                    <size key="minSize" width="11" height="11"/>
+                                    <size key="maxSize" width="11" height="11"/>
+                                    <connections>
+                                        <action selector="addToolbarItem_Action:" target="B8D-0N-5wS" id="aOC-bx-Pg8"/>
+                                        <segue destination="VaT-fL-UEu" kind="sheet" id="pDf-9Z-3cC"/>
                                     </connections>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="qfO-2y-mkb"/>
@@ -456,6 +472,8 @@
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="Gx7-pf-LCc"/>
+                                <toolbarItem reference="xNN-ld-pGT"/>
+                                <toolbarItem reference="faf-gF-W5i"/>
                             </defaultToolbarItems>
                         </toolbar>
                         <connections>
@@ -463,6 +481,7 @@
                         </connections>
                     </window>
                     <connections>
+                        <outlet property="addToolbarItem" destination="faf-gF-W5i" id="WuV-K7-1nX"/>
                         <outlet property="mainWindowController" destination="IQv-IB-iLA" id="X1I-20-xL1"/>
                         <outlet property="runToolbarItem" destination="Gx7-pf-LCc" id="5pC-I7-Tb3"/>
                         <segue destination="eTS-HZ-fb0" kind="relationship" relationship="window.shadowedContentViewController" id="QnL-Rp-81h"/>
@@ -525,6 +544,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
         <image name="NSFollowLinkFreestandingTemplate" width="14" height="14"/>
     </resources>
 </document>

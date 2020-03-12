@@ -70,7 +70,6 @@ class GroupsViewController: NSViewController
     func GetGroupColor(number:Int) -> NSColor
     {
         var color = NSColor()
-        print("groupColor.count is \(groupColor.count)")
         if number >= groupColor.count
         {
             color = .random()
