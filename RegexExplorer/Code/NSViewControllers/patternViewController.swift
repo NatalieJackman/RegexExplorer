@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class PatternViewController: NSViewController
+class PatternViewController: NSViewController, PatternProtocolDelegate
 {
     @IBOutlet weak var patternScrollView: NSScrollView!
     @IBOutlet var patternTextView: NSTextView!
@@ -24,8 +24,16 @@ class PatternViewController: NSViewController
         sampleViewController.RunRegexMatch(pattern: patternTextView.string, groupsViewController: groupsViewController)
     }
     
-    func AddGroupToPattern(groupValue:NSString, groupName:NSString, parent:NSString)
+    func AddGroup(pattern: String, name: String, parent: String)
     {
-        
+        let field = "(?<\(name)>\(pattern))"
+        if patternTextView.string.count > 0
+        {
+            patternTextView.string.append(field)
+        }
+        else
+        {
+            patternTextView.string = field
+        }
     }
 }

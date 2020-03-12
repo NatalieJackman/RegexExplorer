@@ -461,7 +461,7 @@
                                     <size key="maxSize" width="11" height="11"/>
                                     <connections>
                                         <action selector="addToolbarItem_Action:" target="B8D-0N-5wS" id="aOC-bx-Pg8"/>
-                                        <segue destination="VaT-fL-UEu" kind="sheet" id="pDf-9Z-3cC"/>
+                                        <segue destination="VaT-fL-UEu" kind="sheet" identifier="AddGroupSegue" id="pDf-9Z-3cC"/>
                                     </connections>
                                 </toolbarItem>
                                 <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="qfO-2y-mkb"/>

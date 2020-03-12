@@ -22,24 +22,25 @@ class mainWindowController: NSWindowController
     override func windowDidLoad()
     {
         super.windowDidLoad()
+        initialize()
+    }
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?)
+    {
+        if (segue.identifier == "AddGroupSegue")
+        {
+            let vc = segue.destinationController as! AddViewController
+            vc.delegate = patternViewController
+        }
     }
     
     @IBAction func runToolbarItem_Action(_ sender: Any)
     {
-        if initialized == false
-        {
-            initialize()
-        }
         patternViewController.SendSampleViewControllerPattern(sampleViewController: sampleViewController, groupsViewController:groupsViewController)
     }
     
     @IBAction func addToolbarItem_Action(_ sender: Any)
     {
-        if initialized == false
-        {
-            initialize()
-        }
-        
     }
     
     func initialize()

@@ -28,7 +28,7 @@ class GroupsViewController: NSViewController
         {
             groupsFontNameComboBox.addItem(withObjectValue: font)
         }
-        for size in 1 ... 30
+        for size in 1 ... 60
         {
             groupsFontSizeComboBox.addItem(withObjectValue: size)
         }
