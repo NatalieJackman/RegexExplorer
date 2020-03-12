@@ -70,7 +70,8 @@ class GroupsViewController: NSViewController
     func GetGroupColor(number:Int) -> NSColor
     {
         var color = NSColor()
-        if number + 1 >= groupColor.count
+        print("groupColor.count is \(groupColor.count)")
+        if number >= groupColor.count
         {
             color = .random()
             groupColor.insert(color, at:number)
@@ -102,10 +103,10 @@ class GroupsViewController: NSViewController
                 regexGroup.font = NSFont(name: groupsFontNameComboBox.stringValue, size: CGFloat(groupsFontSizeComboBox!.intValue))!
                 regexGroup.range = range
                 groups.insert(regexGroup, at: onRange)
-                groupsComboBox.selectItem(at: 0)
-                groupsColorWell.color = GetGroupColor(number: 0)
             }
         }
+        groupsComboBox.selectItem(at: 0)
+        groupsColorWell.color = GetGroupColor(number: 0)
         sampleViewController.ProcessPatternFeedback(groups: groups)
     }
 }
