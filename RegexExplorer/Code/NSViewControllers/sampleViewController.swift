@@ -21,10 +21,14 @@ class SampleViewController: NSViewController
     
     func ProcessPatternFeedback(groups:[RegexGroup])
     {
+        let bufferText = sampleTextView.string
+        sampleTextView.string = ""
+        sampleTextView.font = groups[0].font
+        sampleTextView.string = bufferText
         for group in groups
         {
             sampleTextView.setTextColor(group.color, range: group.range)
-            sampleTextView.font = group.font
+            
         }
     }
     

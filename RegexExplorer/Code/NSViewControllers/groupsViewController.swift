@@ -60,9 +60,9 @@ class GroupsViewController: NSViewController
     
     func ProcessFontParameterChange()
     {
-        if groups.count > 1
+        if groups.count > 0
         {
-            groups[groupsComboBox.indexOfSelectedItem].font = NSFont(name: groupsFontNameComboBox.stringValue, size: CGFloat(groupsFontSizeComboBox!.intValue))!
+            groups[0].font = NSFont(name: groupsFontNameComboBox.stringValue, size: CGFloat(groupsFontSizeComboBox!.intValue))!
             sampleViewController.ProcessPatternFeedback(groups: groups)
         }
     }
