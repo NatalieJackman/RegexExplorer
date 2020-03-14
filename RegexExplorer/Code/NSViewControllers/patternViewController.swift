@@ -41,7 +41,7 @@ class PatternViewController: NSViewController, PatternProtocolDelegate
                     {
                         var secondHalfPattern = patternTextView.string
                         var firstHalfPattern = String()
-                        for _ in maskRange.lowerBound.utf16Offset(in: patternTextView.string) ... maskRange.upperBound.utf16Offset(in: patternTextView.string)
+                        for _ in maskRange.lowerBound.utf16Offset(in: patternTextView.string) ... maskRange.upperBound.utf16Offset(in: patternTextView.string) - 1
                         {
                             let char = secondHalfPattern.remove(at: secondHalfPattern.startIndex)
                             firstHalfPattern = "\(firstHalfPattern)\(char)"
