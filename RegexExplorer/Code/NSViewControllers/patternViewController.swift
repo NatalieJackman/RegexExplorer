@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Foundation
 
 class PatternViewController: NSViewController, PatternProtocolDelegate
 {
@@ -29,7 +30,21 @@ class PatternViewController: NSViewController, PatternProtocolDelegate
         let field = "(?<\(name)>\(pattern))"
         if patternTextView.string.count > 0
         {
-            patternTextView.string.append(field)
+            if parent.count > 0
+            {
+                if let range = patternTextView.string.range(of: parent)
+                {
+                    let substring = patternTextView.string[..<range.lowerBound]
+                    var string = String(substring)
+                    string = "\(string)\(parent)>"
+                    print(string)
+                    patternTextView.string.append(field)
+                }
+            }
+            else
+            {
+                patternTextView.string.append(field)
+            }
         }
         else
         {
