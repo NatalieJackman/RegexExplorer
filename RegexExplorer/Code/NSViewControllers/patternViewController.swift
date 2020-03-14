@@ -35,10 +35,21 @@ class PatternViewController: NSViewController, PatternProtocolDelegate
                 if let range = patternTextView.string.range(of: parent)
                 {
                     let substring = patternTextView.string[..<range.lowerBound]
-                    var string = String(substring)
-                    string = "\(string)\(parent)>"
-                    print(string)
-                    patternTextView.string.append(field)
+                    var mask = String(substring)
+                    mask = "\(mask)\(parent)>"
+                    if let maskRange = patternTextView.string.range(of: mask)
+                    {
+                        var secondHalfPattern = patternTextView.string
+                        var firstHalfPattern = String()
+                        for _ in maskRange.lowerBound.utf16Offset(in: patternTextView.string) ... maskRange.upperBound.utf16Offset(in: patternTextView.string)
+                        {
+                            let char = secondHalfPattern.remove(at: secondHalfPattern.startIndex)
+                            firstHalfPattern = "\(firstHalfPattern)\(char)"
+                        }
+                        let index = secondHalfPattern.firstIndex(of: ")")!
+                        secondHalfPattern.insert(contentsOf: field, at: index)
+                        patternTextView.string = "\(firstHalfPattern)\(secondHalfPattern)"
+                    }
                 }
             }
             else
