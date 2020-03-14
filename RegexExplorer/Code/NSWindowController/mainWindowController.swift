@@ -30,7 +30,9 @@ class mainWindowController: NSWindowController
         if (segue.identifier == "AddGroupSegue")
         {
             let vc = segue.destinationController as! AddViewController
-            vc.delegate = patternViewController
+            vc.patternDelegate = patternViewController
+            vc.groupsViewController = groupsViewController
+            vc.patternViewController = patternViewController
         }
     }
     
